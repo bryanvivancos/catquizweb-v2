@@ -1,9 +1,14 @@
+import React from 'react';
 import './App.css'
-import Banner from './components/banner'
+import Navbar from './components/navbar';
+import Hero from './components/hero';
 
 function App() {
   return (
-    <Banner></Banner>
+    <div>
+      <Navbar />
+      <Hero />
+    </div>
   )
 }
 
