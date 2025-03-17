@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.left-footer, .right-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item {
+    display: block;
+    text-decoration: none;
+}
+
+.footer-link {
+    margin-left: 10px;
+}

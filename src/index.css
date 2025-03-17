@@ -1,7 +1,13 @@
 :root {
+  --green-dark: #999b84;
+  --rose-light: #fff1f1;
+  --rose-classic: #fed5db;
+  --rose-medium: #e9c4bb;
+  --rose-dark: #c68f88;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  background-color: #fff1f1;
+  background-color: var(--rose-light);
   /* padding-top: 60px; Para que el contenido no quede oculto detrás del navbar */
 }
 /* Reset básico */
@@ -10,3 +16,4 @@
   padding: 0;
   box-sizing: border-box;
 }
+

@@ -1,12 +1,12 @@
-import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
-import '../styles/Navbar.css'
+import { FaBars, FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
+import '../styles/navbar.css'
 
 const Navbar = () => {
     return (
         <nav className="navbar">
             {/* Icono de búsqueda */}
             <div className="nav-left">
-                <FaSearch />
+                <FaBars />
             </div>
 
             {/* Logo */}
@@ -16,8 +16,9 @@ const Navbar = () => {
 
             {/* Iconos de usuario y carrito */}
             <div className="nav-right">
-                <FaUser />
-                <FaShoppingCart />
+                <FaSearch/>
+                <FaUser/>
+                <FaShoppingCart/>
             </div>
         </nav>
     )
