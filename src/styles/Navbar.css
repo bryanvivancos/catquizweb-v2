@@ -1,11 +1,15 @@
 /* Navbar */
-.navbar {
+.header {
     position: fixed;
-    top: 0;
-    /*left: 0; */
     width: 100%;
-    max-height: 115px;
     background-color: var(--rose-dark);
+    top: 0;
+    left: 0;
+}
+.navbar {
+    max-height: 115px;
+    width: 720px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -4,7 +4,9 @@ const Hero = () => {
     return (
         <div className="content">
             <h1>Bienvenido a la Tienda Online</h1>
-            <p>Proximamente... </p>
+            <p>Proximamente... 
+                
+            </p>
         </div>
     )
 }

@@ -1,14 +1,19 @@
 /* Estilos generales */
-header {
-    height: 115px;
-}
-
 .layout {
     display: grid;
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
+    justify-content: center;
+}
+
+header {
+    height: 115px;
 }
 
 footer {
     margin-bottom: 20px;
+}
+
+header, main, footer {
+    width: 720px;
 }
