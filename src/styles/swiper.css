@@ -1,4 +1,21 @@
-.swiper {
+.custom-swiper {
+    height: 720px;
+    width: 450px;
+    user-select: none;
+}
+
+.swiper-img {
+    display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+    color: white;
+}
+
+.custom-swiper .swiper-pagination-bullet {
+    background-color: var(--rose-dark);
 }

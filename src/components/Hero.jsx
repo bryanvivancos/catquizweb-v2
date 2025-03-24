@@ -1,28 +1,30 @@
 import "../styles/hero.css"
 import ProductBox from "./ProductBox"
-import Slider from "./slider"
 import SwiperComponent from "./Swiper"
+
+// import slides from '../assets/mock.json'
+
+slidesImgs = [
+    {
+        "image": "https://drive.google.com/file/d/1-Z0KmQMrd-5eCzoIulQyjRG5a0kJck5Y/view?usp=sharing"
+    },
+    {
+        "image": "https://drive.google.com/file/d/1-Z0KmQMrd-5eCzoIulQyjRG5a0kJck5Y/view?usp=sharing"
+    }
+]
 
 const Hero = () => {
     return (
         <div className="content">
             <h1>Bienvenido a la Tienda Online
-                Balqis
             </h1>
             <p>Proximamente... 
             </p>
 
-            {/* <Slider 
-                imgSource="src\assets\f886ffb4-7ce1-4dc8-b611-05c8ee23ed1a.webp"
-            /> */}
-            <div className="swiper">
-                <SwiperComponent 
-                    imgSource= "src\assets\f886ffb4-7ce1-4dc8-b611-05c8ee23ed1a.webp"
-                />
-            </div>
-            
+            <SwiperComponent 
+                slides= {slidesImgs}
+            />
 
-            
             <div className="catalog">
                 <ProductBox
                     product="Anillo dorado Verano"
