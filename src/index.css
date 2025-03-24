@@ -5,6 +5,8 @@
   --rose-medium: #e9c4bb;
   --rose-dark: #c68f88;
 
+  --font-titles: 'Balqis'; 
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   background-color: var(--rose-light);
@@ -17,3 +19,7 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Balqis';
+  src: url('../fonts/BALQIS.woff2') format('woff2');
+}

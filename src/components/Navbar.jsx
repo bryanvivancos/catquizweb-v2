@@ -12,7 +12,9 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <div className="nav-center">
+                    <a href="">
                     <img className="logo" src= "src\assets\CATQUIZ_Logo_Blanco.png" alt="logo CatQuiz" />
+                    </a>
                 </div>
 
                 {/* Iconos de usuario y carrito */}

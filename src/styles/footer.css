@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-h4 {
+.left-footer h4, .right-footer h4 {
     margin-bottom: 10px;
 }
 

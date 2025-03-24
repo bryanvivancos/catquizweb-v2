@@ -17,3 +17,6 @@ footer {
 header, main, footer {
     width: 720px;
 }
+h1, h2, h3{
+    font-family: var(--font-titles);
+}
