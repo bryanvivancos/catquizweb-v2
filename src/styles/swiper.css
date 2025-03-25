@@ -2,6 +2,7 @@
     height: 720px;
     width: 450px;
     user-select: none;
+    margin: 20px auto;
 }
 
 .swiper-img {
@@ -12,10 +13,27 @@
 }
 
 .custom-swiper .swiper-button-next,
-.custom-swiper .swiper-button-prev {
+.custom-swiper .swiper-button-prev, 
+.custom-swiper-categories .swiper-button-next,
+.custom-swiper-categories .swiper-button-prev{
     color: white;
 }
 
-.custom-swiper .swiper-pagination-bullet {
+.custom-swiper .swiper-pagination-bullet,
+.custom-swiper-categories .swiper-pagination-bullet {
     background-color: var(--rose-dark);
+}
+
+.custom-swiper-categories {
+    width: var(--principal-width);
+    height: 240px;
+    margin: 20px 0;
+    user-select: none;
+}
+
+.swiper-img-categories {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }

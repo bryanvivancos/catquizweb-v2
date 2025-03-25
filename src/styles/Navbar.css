@@ -5,10 +5,11 @@
     background-color: var(--rose-dark);
     top: 0;
     left: 0;
-}
-.navbar {
     max-height: 115px;
-    width: 720px;
+}
+.head {
+    
+    width: var(--principal-width);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,7 @@
 
 
 /* Estilos de los elementos del navbar */
-.nav-left, .nav-right {
+.head-left, .head-right {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -28,7 +29,7 @@
     height: 115px;
 }
 
-.nav-center {
+.head-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -40,4 +41,9 @@
 /* Tamaño del logo */
 .logo {
     max-height: 115px;
+}
+
+.navbar {
+    position: absolute;
+    display: block;
 }

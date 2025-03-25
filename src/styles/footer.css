@@ -15,8 +15,11 @@
 .footer-item {
     display: block;
     text-decoration: none;
+    color: var(--black);
 }
 
 .footer-link {
     margin-left: 10px;
+    text-decoration: none;
+    color: var(--black);
 }
