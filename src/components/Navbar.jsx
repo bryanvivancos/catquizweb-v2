@@ -14,7 +14,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <div className="head-center">
                         <a href="">
-                        <img className="logo" src= "src\assets\CATQUIZ_Logo_Blanco.png" alt="logo CatQuiz" />
+                        <img className="logo" src= "src\assets\images\CATQUIZ_Logo_Blanco.png" alt="logo CatQuiz" />
                         </a>
                     </div>
 

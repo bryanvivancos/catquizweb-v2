@@ -6,7 +6,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
-import '../styles/swiper.css'
+import '../../styles/swiper.css'
 
 
 const SwiperComponent = ({ slides, isEnabled, classComponent, classImg, slidesPV, spaceBtwn }) => {
@@ -32,7 +32,6 @@ const SwiperComponent = ({ slides, isEnabled, classComponent, classImg, slidesPV
           </a>
         </SwiperSlide>
       ))}
-
         </Swiper>
     )    
 }
