@@ -1,14 +1,14 @@
 import React from 'react';
 import '../styles/App.css'
-import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
+import Heading from '../components/Heading';
 
 function App() {
     return (
         <div className='layout'>
             <header>
-                <Navbar />
+                <Heading />
             </header>  
             <main>
                 <Hero/>

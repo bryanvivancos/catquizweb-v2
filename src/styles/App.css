@@ -7,7 +7,7 @@
 }
 
 header {
-    height: 115px;
+    height: var(--header-height);
     z-index: 1000;
 }
 

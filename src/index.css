@@ -9,11 +9,15 @@
 
   --font-titles: 'Balqis'; 
 
-  --principal-width: 900px;
+  --font-regular: 'Amelia Basic';
 
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --principal-width: 900px;
+  --header-height: 130px;
+
+  font-family: var(--font-regular);
   line-height: 1.5;
-  background-color: var(--rose-light);
+  /* background-color: var(--rose-light); */
+  background-color: white;
   /* padding-top: 60px; Para que el contenido no quede oculto detrás del navbar */
 }
 /* Reset básico */
@@ -22,6 +26,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Amelia Basic';
+  src: url('/src/assets/fonts/Amelia-Basic.woff2') format('woff2');
+}
+
 
 @font-face {
   font-family: 'Balqis';
