@@ -1,34 +1,40 @@
-/* Navbar */
+/* nav-bar */
 .header {
     position: fixed;
     width: 100%;
     height: 100%;
-    /* background-color: var(--rose-dark); */
     background-color: var(--rose-dark);
     top: 0;
     left: 0;
     max-height: var(--header-height);
+    justify-items: center;
 }
 .head {
-    
     width: var(--principal-width);
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 20px;
 }
 
-
-/* Estilos de los elementos del navbar */
-.head-left, .head-right {
+/* Estilos de los elementos del nav-bar */
+.head-right, .head-left {
     display: flex;
     align-items: center;
-    gap: 20px;
     font-size: 20px;
-    cursor: pointer;
-    color: white;
+}
+
+.head-right {
+    justify-content: end;
+    width: 100%;
+    gap: 20px;
     height: var(--header-height);
+}
+
+.head-left {
+    display:none;
+    justify-content: start;
 }
 
 .head-center {
@@ -37,7 +43,9 @@
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    height: 100%;
+    width: 100%;
 }
 
 /* Tamaño del logo */
@@ -45,21 +53,54 @@
     max-height: 110px;
 }
 
-.navbar {
+/* Items nav-bar*/
+.nav-bar {
     position: absolute;
     bottom: 0;
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 10px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
     gap: 30px;
+    padding-left: 0;
+    margin-bottom: 0px;
 }
 
-.navbar a {
+.nav-bar ul li a {
     text-decoration: none;
-    padding: 5px;
-}
-
-.navbar p {
+    cursor: pointer;
     color: white;
     font-size: medium;
+}
+
+@media (max-width: 1020px) {
+    /* … */
+    .head {
+        width: 100%;
+        height: 100%;
+    }
+
+    .head-left {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .head-right {
+        display: none;
+    }
+    
+    .head-center {
+        width: 100%;
+        justify-content: center;
+    }
+    .nav-bar {
+        display: none;
+    }
 }

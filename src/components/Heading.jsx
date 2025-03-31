@@ -1,42 +1,74 @@
 import { FaBars, FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
 import '../styles/heading.css'
+import SideBarMenu from "./atoms/SideBarMenu.jsx";
+
+
+const itemsNav = [
+    { name: "Inicio", link: "#" },  
+    { name: "Colecciones", link: "#" },
+    { name: "Productos", link: "#" },
+    { name: "Regalos", link: "#" },
+];
 
 const Heading = () => {
     return (
         <div className="header">
-            {/* Icono de búsqueda */}
             <div className="head">
                 <div className="head-left">
-                    <FaBars />
-                </div>
+                    {/* <SideBarMenu /> */}
 
+                    <SideBarMenu
+                        items={itemsNav}
+                    >
+                        <FaBars 
+                            color="white"
+                            title="Menu"
+                        />
+                    </SideBarMenu>
+
+
+                    {/* <a  href=""> 
+                        <FaBars 
+                            color="white"
+                            title="Menu"
+                        />
+                    </a> */}
+                </div>
+                
                 {/* Logo */}
-                <div className="head-center">
-                    <a href="">
+                <a href="" className="head-center">
                     <img className="logo" src= "src\assets\images\CATQUIZ_Logo_Blanco.png" alt="logo CatQuiz" />
+                </a>
+
+                <div className="head-right">
+                    <a href="">
+                        <FaSearch
+                            color="white"
+                            title="Buscar"
+                        />
+                    </a>
+                    <a href="">
+                        <FaUser
+                            color="white"
+                            title="Iniciar sesión"
+                        />
+                    </a>
+                    <a href="">
+                        <FaShoppingCart
+                            color="white"
+                            title="Carrito de compras"    
+                        />
                     </a>
                 </div>
-
-                {/* Iconos de usuario y carrito */}
-                <div className="head-right">
-                    <FaSearch/>
-                    <FaUser/>
-                    <FaShoppingCart/>
-                </div>
+                
             </div>
-            <nav className="navbar">
-                <a href="">
-                    <p>Inicio</p>
-                </a>
-                <a href="">
-                    <p>Colecciones</p>
-                </a>
-                <a href="">
-                    <p>Productos</p>
-                </a>
-                <a href="">
-                    <p>Regalos</p>
-                </a>
+            <nav className="nav-bar">
+                <ul>
+                    {itemsNav.map((item) => (   
+                        <li><a href="">{ item.name }</a></li>
+                        )
+                    )}
+                </ul>
             </nav>
         </div>
     )

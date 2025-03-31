@@ -12,13 +12,13 @@
   --font-regular: 'Amelia Basic';
 
   --principal-width: 900px;
+  --secondary-width: 600px;
   --header-height: 130px;
 
-  font-family: var(--font-regular);
   line-height: 1.5;
   /* background-color: var(--rose-light); */
   background-color: white;
-  /* padding-top: 60px; Para que el contenido no quede oculto detrás del navbar */
+  /* padding-top: 60px; Para que el contenido no quede oculto detrás del nav-bar */
 }
 /* Reset básico */
 * {
