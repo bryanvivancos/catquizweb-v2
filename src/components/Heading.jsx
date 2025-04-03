@@ -41,19 +41,19 @@ const Heading = () => {
                 </a>
 
                 <div className="head-right">
-                    <a href="">
+                    <a href="" className="head-right-search">
                         <FaSearch
                             color="white"
                             title="Buscar"
                         />
                     </a>
-                    <a href="">
+                    <a href="" className="head-right-login">
                         <FaUser
                             color="white"
                             title="Iniciar sesión"
                         />
                     </a>
-                    <a href="">
+                    <a href="" className="head-right-cart">
                         <FaShoppingCart
                             color="white"
                             title="Carrito de compras"    
