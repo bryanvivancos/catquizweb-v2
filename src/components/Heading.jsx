@@ -31,9 +31,11 @@ const Heading = () => {
                 </div>
                 
                 {/* Logo */}
-                <a href="" className="head-center">
-                    <img className="logo" src= "src\assets\images\CATQUIZ_Logo_Blanco.png" alt="logo CatQuiz" />
-                </a>
+                <div className="head-center">
+                    <a href="" >
+                        <img className="logo" src= "src\assets\images\CATQUIZ_Logo_Blanco.png" alt="logo CatQuiz" />
+                    </a>
+                </div>
 
                 <div className="head-right">
                     <div className="head-right-OfButton">
