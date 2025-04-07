@@ -30,13 +30,16 @@ const Footer = () => {
                 </h4>
                 <p className="footer-item">
                     Instagram <FaInstagram/>:  
-                    <a href="https://instagram.com/catquiz.pe" className="footer-link">
+                    <a href="https://instagram.com/catquiz.pe" className="footer-link"
+                    target="_blank">                    
                     catquiz.pe
                     </a>
                 </p>
                 <p className="footer-item">
                     Whatsapp <FaWhatsapp />: 
-                    <a href="#" className="footer-link">
+                    <a href="#" 
+                    className="footer-link" 
+                    target="_blank">
                         Número de Whatsapp
                     </a>
                 </p>
