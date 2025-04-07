@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import CartButton from "./CartButton";
+
+import "../../styles/sideBarMenu.css"
 
 const SideBarMenu = ( {children, items} ) => {
     const [show, setShow] = useState(false);
@@ -22,13 +25,13 @@ const SideBarMenu = ( {children, items} ) => {
                 {children}
             </Button>
 
-            <Offcanvas show={show} onHide={handleClose}>
+            <Offcanvas show={show} onHide={handleClose} placement='start' >
                 <Offcanvas.Header closeButton /> 
 
                 <Offcanvas.Body>
                     <ul style={ {listStyle: "none", padding: 0} }>
                         {items.map((item) => (   
-                            <li style={ {margin: "15px 0"}}>
+                            <li key={item.id} style={ {margin: "15px 0"}}>
                                 <a 
                                 href="" 
                                 style= { {textDecoration: "none", color: "var(--rose-dark)"} }
@@ -40,28 +43,22 @@ const SideBarMenu = ( {children, items} ) => {
                         )}
                     </ul>
 
-                    <div style={ {margin: "100px 0"} }>
-                        <a href="" style={ {textDecoration: "none", color: "var(--rose-dark)", display: "flex", alignItems: "center", gap: "10px", margin: "15px 0"} }>
-                            <FaSearch
-                                color= "var(--rose-dark)"
-                                title="Buscar"
-                            />
-                            Buscar
-                        </a>
-                        <a href=""  style={ {textDecoration: "none", color: "var(--rose-dark)", display: "flex", alignItems: "center", gap: "10px", margin: "15px 0"} }>
+                    <div className="sideBar-HeadItems">
+                        <a href="" >
                             <FaUser
                                 color= "var(--rose-dark)"
                                 title="Iniciar sesión"
                             />
                             Iniciar Sesion
                         </a>
-                        <a href="" style={ {textDecoration: "none", color: "var(--rose-dark)", display: "flex", alignItems: "center", gap: "10px", margin: "15px 0"} }>
-                            <FaShoppingCart
-                                color= "var(--rose-dark)"
-                                title="Carrito de compras"    
+                        <div>
+                            <CartButton
+                                text= "Carrito de Compras"
+                                colorBtn= "var(--rose-dark)"
+                                sizeBtn={15}
                             />
-                            Carrito
-                        </a>
+                        </div>
+
                     </div>
                 </Offcanvas.Body>
 
