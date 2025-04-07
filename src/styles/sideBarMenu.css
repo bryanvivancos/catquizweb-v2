@@ -1,0 +1,24 @@
+.sideBar-HeadItems {
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+    gap: 10px; 
+    margin: 50px 0;
+}
+
+.sideBar-HeadItems a {
+    text-decoration: none;
+    color: var(--rose-dark);
+}
+
+.sideBar-HeadItems svg {
+    margin-right: 10px;
+}
+
+.sideBar-HeadItems div button{
+    color: var(--rose-dark);
+}
+
+.sideBar-HeadItems div button:hover {
+    color: var(--rose-dark);
+}

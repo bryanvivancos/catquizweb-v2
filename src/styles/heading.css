@@ -32,6 +32,12 @@
     height: var(--header-height);
 }
 
+.head-right-OfButton {
+    z-index: 1010;
+}
+
+
+
 .head-left {
     display:none;
     justify-content: start;

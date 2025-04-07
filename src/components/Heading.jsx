@@ -1,13 +1,15 @@
 import { FaBars, FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
 import '../styles/heading.css'
 import SideBarMenu from "./atoms/SideBarMenu.jsx";
+import CartButton from "./atoms/CartButton.jsx";
+import SearchButton from "./atoms/SearchButton.jsx";
 
 
 const itemsNav = [
-    { name: "Inicio", link: "#" },  
-    { name: "Colecciones", link: "#" },
-    { name: "Productos", link: "#" },
-    { name: "Regalos", link: "#" },
+    { id: 0, name: "Inicio", link: "#" },  
+    { id: 1, name: "Colecciones", link: "#" },
+    { id: 2, name: "Productos", link: "#" },
+    { id: 3, name: "Regalos", link: "#" },
 ];
 
 const Heading = () => {
@@ -26,13 +28,6 @@ const Heading = () => {
                         />
                     </SideBarMenu>
 
-
-                    {/* <a  href=""> 
-                        <FaBars 
-                            color="white"
-                            title="Menu"
-                        />
-                    </a> */}
                 </div>
                 
                 {/* Logo */}
@@ -41,31 +36,31 @@ const Heading = () => {
                 </a>
 
                 <div className="head-right">
-                    <a href="" className="head-right-search">
-                        <FaSearch
-                            color="white"
-                            title="Buscar"
+                    <div className="head-right-OfButton">
+                        <SearchButton 
+                            colorBtn="white"
+                            sizeBtn={20}
                         />
-                    </a>
+                    </div>
                     <a href="" className="head-right-login">
                         <FaUser
                             color="white"
                             title="Iniciar sesión"
                         />
                     </a>
-                    <a href="" className="head-right-cart">
-                        <FaShoppingCart
-                            color="white"
-                            title="Carrito de compras"    
+                    <div className="head-right-OfButton" >
+                        <CartButton 
+                            colorBtn="white"
+                            sizeBtn={20}
                         />
-                    </a>
+                    </div>
                 </div>
                 
             </div>
             <nav className="nav-bar">
                 <ul>
                     {itemsNav.map((item) => (   
-                        <li><a href="">{ item.name }</a></li>
+                        <li key={item.id}><a href="">{ item.name }</a></li>
                         )
                     )}
                 </ul>
