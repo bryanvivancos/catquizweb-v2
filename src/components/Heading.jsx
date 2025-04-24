@@ -3,13 +3,14 @@ import '../styles/heading.css'
 import SideBarMenu from "./atoms/SideBarMenu.jsx";
 import CartButton from "./atoms/CartButton.jsx";
 import SearchButton from "./atoms/SearchButton.jsx";
+import { NavLink } from "react-router-dom";
 
 
 const itemsNav = [
-    { id: 0, name: "Inicio", link: "#" },  
-    { id: 1, name: "Colecciones", link: "#" },
-    { id: 2, name: "Productos", link: "#" },
-    { id: 3, name: "Regalos", link: "#" },
+    { id: 0, to: "/inicio", name: "Inicio", link: "#" },  
+    { id: 1, to: "/colecciones", name: "Colecciones", link: "#" },
+    { id: 2, to: "/productos", name: "Productos", link: "#" },
+    { id: 3, to: "/regalos", name: "Regalos", link: "#" },
 ];
 
 const Heading = () => {
@@ -61,8 +62,11 @@ const Heading = () => {
             </div>
             <nav className="nav-bar">
                 <ul>
-                    {itemsNav.map((item) => (   
-                        <li key={item.id}><a href="">{ item.name }</a></li>
+                    {itemsNav.map((route) => (   
+                        <li key={route.id}>
+                            <NavLink to= {route.to}>{route.name}</NavLink>
+                            {/* <a href="">{ route.name }</a> */}
+                        </li>
                         )
                     )}
                 </ul>
