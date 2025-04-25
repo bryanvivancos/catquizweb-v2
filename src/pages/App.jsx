@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import '../styles/App.css'
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
+import '../styles/App.css';
 import Heading from '../components/Heading';
-import Productos from '../pages/Productos';
+import Footer from '../components/Footer';
 import Inicio from '../pages/Inicio';
+import Productos from '../pages/Productos';
+import Colecciones from '../pages/Colecciones';
+import Regalos from '../pages/Regalos';
 
 function App() {
     return (
@@ -15,10 +16,10 @@ function App() {
                     <Heading />
                 </header>  
                 <Routes>
-                    <Route path='/inicio' element= {<Inicio/>}/>
-                    <Route path='/colecciones' element= {<p>Not found</p>}/>
+                    <Route path='/' element= {<Inicio/>}/>
+                    <Route path='/colecciones' element= {<Colecciones/>}/>
                     <Route path='/productos' element= {<Productos/>}/>
-                    <Route path='/regalos' element= {<p>Not found</p>}/>
+                    <Route path='/regalos' element= {<Regalos/>}/>
                     <Route path="*" element={<p>Not found</p>} />
                 </Routes>
 {/* 

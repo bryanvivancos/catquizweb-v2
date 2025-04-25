@@ -3,6 +3,7 @@ import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import CartButton from "./CartButton";
+import { NavLink } from "react-router-dom";
 
 import "../../styles/sideBarMenu.css"
 
@@ -30,20 +31,29 @@ const SideBarMenu = ( {children, items} ) => {
 
                 <Offcanvas.Body>
                     <ul style={ {listStyle: "none", padding: 0} }>
-                        {items.map((item) => (   
-                            <li key={item.id} style={ {margin: "15px 0"}}>
-                                <a 
-                                href="" 
-                                style= { {textDecoration: "none", color: "var(--rose-dark)"} }
-                                >
-                                    { item.name }
-                                </a>
+                        {items.map((route) => (   
+                            <li key={route.id} style={ {margin: "15px 0"}}>
+                                <NavLink 
+                                    to= {route.to} 
+                                    style= {{textDecoration: "none", color: "var(--rose-dark)"}}
+                                    onClick={handleClose}>
+                                        {route.name}
+                                </NavLink>
+                                {/* <a href="">{ route.name }</a> */}
                             </li>
+                            // <li key={route.id} style={ {margin: "15px 0"}}>
+                            //     <a 
+                            //     href="" 
+                            //     style= { {textDecoration: "none", color: "var(--rose-dark)"} }
+                            //     >
+                            //         { route.name }
+                            //     </a>
+                            // </li>
                             )
                         )}
                     </ul>
 
-                    <div className="sideBar-HeadItems">
+                    <div className="sideBar-HeadItems">  
                         <a href="" >
                             <FaUser
                                 color= "var(--rose-dark)"

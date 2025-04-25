@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const CartButton = ( {text, colorBtn, sizeBtn} ) => {
+const SearchButton = ( {text, colorBtn, sizeBtn} ) => {
     const [showCart, setShowCart] = useState(false);
 
     const handleCloseCart = () => setShowCart(false);
@@ -30,4 +30,4 @@ const CartButton = ( {text, colorBtn, sizeBtn} ) => {
     )
 }
 
-export default CartButton;
+export default SearchButton;

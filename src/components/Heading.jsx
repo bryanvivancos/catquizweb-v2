@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 
 const itemsNav = [
-    { id: 0, to: "/inicio", name: "Inicio", link: "#" },  
+    { id: 0, to: "/", name: "Inicio", link: "#" },  
     { id: 1, to: "/colecciones", name: "Colecciones", link: "#" },
     { id: 2, to: "/productos", name: "Productos", link: "#" },
     { id: 3, to: "/regalos", name: "Regalos", link: "#" },
@@ -33,9 +33,12 @@ const Heading = () => {
                 
                 {/* Logo */}
                 <div className="head-center">
-                    <a href="" >
+                    <NavLink to={"/"}>
+                        <img className="logo" src= "src\assets\images\CATQUIZ_Logo_Blanco.png" alt="logo CatQuiz" />    
+                    </NavLink>
+                    {/* <a href="" >
                         <img className="logo" src= "src\assets\images\CATQUIZ_Logo_Blanco.png" alt="logo CatQuiz" />
-                    </a>
+                    </a> */}
                 </div>
 
                 <div className="head-right">
@@ -64,7 +67,9 @@ const Heading = () => {
                 <ul>
                     {itemsNav.map((route) => (   
                         <li key={route.id}>
-                            <NavLink to= {route.to}>{route.name}</NavLink>
+                            <NavLink to= {route.to}>
+                                {route.name}
+                            </NavLink>
                             {/* <a href="">{ route.name }</a> */}
                         </li>
                         )
